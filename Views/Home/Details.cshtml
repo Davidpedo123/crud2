@@ -1,0 +1,41 @@
+@model crud2.Models.Institucion
+
+@{
+    ViewData["Title"] = "Detalles de la Institución";
+}
+
+<h2>Detalles de la Institución</h2>
+
+<div>
+    <h4>Institución</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Id</dt>
+        <dd class="col-sm-10">@Model.Id</dd>
+        
+        <dt class="col-sm-2">Nombre</dt>
+        <dd class="col-sm-10">@Model.Nombre</dd>
+        
+        <dt class="col-sm-2">Sigla</dt>
+        <dd class="col-sm-10">@Model.Sigla</dd>
+        
+        <dt class="col-sm-2">Ubicación</dt>
+        <dd class="col-sm-10">@Model.Ubicacion</dd>
+        
+        <dt class="col-sm-2">Latitud Mínima</dt>
+        <dd class="col-sm-10">@Model.Lat_Min</dd>
+        
+        <dt class="col-sm-2">Latitud Máxima</dt>
+        <dd class="col-sm-10">@Model.Lat_Max</dd>
+        
+        <dt class="col-sm-2">Longitud Mínima</dt>
+        <dd class="col-sm-10">@Model.Lon_Min</dd>
+        
+        <dt class="col-sm-2">Longitud Máxima</dt>
+        <dd class="col-sm-10">@Model.Lon_Max</dd>
+    </dl>
+</div>
+<p>
+    <a asp-controller="Instituciones" asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-controller="Instituciones" asp-action="Index">Volver al Listado</a>
+</p>
