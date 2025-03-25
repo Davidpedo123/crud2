@@ -11,4 +11,8 @@
     <ProjectReference Include="..\OrdenCompra.Infraestructure\OrdenCompra.Infraestructure.csproj" />
 
   </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.0.0" />
+  </ItemGroup>
 </Project>

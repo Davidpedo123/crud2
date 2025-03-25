@@ -10,7 +10,7 @@ namespace crud2.OrdenCompra.Domain.Entidades
         public decimal MontoTotal { get; private set; }
         public string Estado { get; private set; }
         public DateTime FechaCreacion { get; private set; }
-        public string Comentarios { get; private set; }
+        public string? Comentarios { get; private set; }
 
         
         public Proveedor Proveedor { get; private set; }
@@ -71,6 +71,15 @@ namespace crud2.OrdenCompra.Domain.Entidades
             Email = email;
             Direccion = direccion;
             OrdenesCompra = new List<OrdenCompra>();
+        }
+        public void Update(string nombre, string contacto, string telefono, string email, string direccion)
+        {
+            
+            Nombre = nombre;
+            Contacto = contacto;
+            Telefono = telefono;
+            Email = email;
+            Direccion = direccion;
         }
 
         

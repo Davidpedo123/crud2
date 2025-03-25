@@ -6,19 +6,17 @@ namespace crud2.OrdenCompra.Web.Controllers
 {
     public class OrdenCompraController : Controller
     {
-        private readonly IOrdenCompraService _service;
+        private readonly IServicioOrdenCompra _service;
 
-        public OrdenCompraController(IOrdenCompraService service)
+        public OrdenCompraController(IServicioOrdenCompra service)
             => _service = service;
 
-        
         public async Task<IActionResult> Index()
         {
             var ordenes = await _service.GetAllAsync();
             return View(ordenes);
         }
 
-        
         public async Task<IActionResult> Details(int id)
         {
             var orden = await _service.GetByIdAsync(id);
@@ -26,21 +24,19 @@ namespace crud2.OrdenCompra.Web.Controllers
             return View(orden);
         }
 
-        
-        public IActionResult Create()
-            => View();
+        public IActionResult Create() => View();
 
-        
         [HttpPost]
         public async Task<IActionResult> Create(OrdenCompraDto dto)
         {
             if (!ModelState.IsValid) return View(dto);
 
-            var orden = new OrdenCompra(dto.ProveedorId, dto.MontoTotal, "Creada", dto.Comentarios);
+            var orden = new crud2.OrdenCompra.Domain.Entidades.OrdenCompra(dto.ProveedorId, dto.MontoTotal, "Creada", dto.Comentarios);
+
+
+           
             await _service.CreateAsync(orden);
             return RedirectToAction(nameof(Index));
         }
-
-        
     }
 }

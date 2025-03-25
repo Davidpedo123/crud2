@@ -1,12 +1,22 @@
+using Microsoft.EntityFrameworkCore;
+
+using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.DependencyInjection;
+
+using crud2.OrdenCompra.Infraestructure;       // Si OrdenCompraContext está en este namespace
+using crud2.OrdenCompra.Application.Interfaces;   // Para IOrdenCompraService, IProveedorService
+       // Para OrdenCompraService, ProveedorService (si es que están allí)
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 
-builder.Services.AddDbContext<OrdenCompraContext>(options =>
+builder.Services.AddDbContext<DbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
-builder.Services.AddScoped<IOrdenCompraService, OrdenCompraService>();
-builder.Services.AddScoped<IProveedorService, ProveedorService>();
+builder.Services.AddScoped<IServicioOrdenCompra, IServicioOrdenCompra>();
+builder.Services.AddScoped<IProveedorService, IProveedorService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

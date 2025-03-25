@@ -10,3 +10,15 @@ C:\Users\david\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompr
 C:\Users\david\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\refint\OrdenCompra.Domain.dll
 C:\Users\david\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompra.Domain.pdb
 C:\Users\david\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\ref\OrdenCompra.Domain.dll
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\bin\Debug\net8.0\OrdenCompra.Domain.deps.json
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\bin\Debug\net8.0\OrdenCompra.Domain.dll
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\bin\Debug\net8.0\OrdenCompra.Domain.pdb
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompra.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompra.Domain.AssemblyInfoInputs.cache
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompra.Domain.AssemblyInfo.cs
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompra.Domain.csproj.CoreCompileInputs.cache
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompra.Domain.sourcelink.json
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompra.Domain.dll
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\refint\OrdenCompra.Domain.dll
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\OrdenCompra.Domain.pdb
+C:\Users\etejada\source\repos\crud2\OrdenCompra.Domain\obj\Debug\net8.0\ref\OrdenCompra.Domain.dll
