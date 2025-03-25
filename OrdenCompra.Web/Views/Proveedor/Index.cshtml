@@ -1,0 +1,32 @@
+@model IEnumerable<crud2.OrdenCompra.Domain.Entidades.Proveedor>
+
+@{
+    ViewData["Title"] = "Listado de Proveedores";
+}
+<h1>@ViewData["Title"]</h1>
+<p><a class="btn btn-primary" asp-action="Create">Nuevo Proveedor</a></p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th><th>Nombre</th><th>Contacto</th><th>Teléfono</th><th>Email</th><th>Dirección</th><th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var p in Model)
+    {
+        <tr>
+            <td>@p.ProveedorId</td>
+            <td>@p.Nombre</td>
+            <td>@p.Contacto</td>
+            <td>@p.Telefono</td>
+            <td>@p.Email</td>
+            <td>@p.Direccion</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@p.ProveedorId">Ver</a> |
+                <a asp-action="Edit" asp-route-id="@p.ProveedorId">Editar</a> |
+                <a asp-action="Delete" asp-route-id="@p.ProveedorId">Eliminar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

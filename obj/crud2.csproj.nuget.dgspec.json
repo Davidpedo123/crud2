@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\david\\source\\repos\\crud2\\crud2.csproj": {}
+    "C:\\Users\\david\\source\\repos\\crud2\\crud2.csproj": {}
   },
   "projects": {
-    "c:\\Users\\david\\source\\repos\\crud2\\crud2.csproj": {
+    "C:\\Users\\david\\source\\repos\\crud2\\crud2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\david\\source\\repos\\crud2\\crud2.csproj",
+        "projectUniqueName": "C:\\Users\\david\\source\\repos\\crud2\\crud2.csproj",
         "projectName": "crud2",
-        "projectPath": "c:\\Users\\david\\source\\repos\\crud2\\crud2.csproj",
+        "projectPath": "C:\\Users\\david\\source\\repos\\crud2\\crud2.csproj",
         "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\david\\source\\repos\\crud2\\obj\\",
+        "outputPath": "C:\\Users\\david\\source\\repos\\crud2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",

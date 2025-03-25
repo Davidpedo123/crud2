@@ -1,0 +1,9 @@
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.csproj.AssemblyReference.cache
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.AssemblyInfoInputs.cache
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.AssemblyInfo.cs
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.RazorAssemblyInfo.cache
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.RazorAssemblyInfo.cs
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.sourcelink.json

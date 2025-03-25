@@ -1,0 +1,30 @@
+@model crud2.OrdenCompra.Domain.Entidades.Proveedor
+@{
+    ViewData["Title"] = "Editar Proveedor";
+}
+<h1>@ViewData["Title"]</h1>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ProveedorId" />
+    <div class="mb-3">
+        <label asp-for="Nombre" class="form-label"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Contacto" class="form-label"></label>
+        <input asp-for="Contacto" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Telefono" class="form-label"></label>
+        <input asp-for="Telefono" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Direccion" class="form-label"></label>
+        <input asp-for="Direccion" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "OrdenCompra.Application/1.0.0": {
+        "dependencies": {
+          "OrdenCompra.Domain": "1.0.0"
+        },
+        "runtime": {
+          "OrdenCompra.Application.dll": {}
+        }
+      },
+      "OrdenCompra.Domain/1.0.0": {
+        "runtime": {
+          "OrdenCompra.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OrdenCompra.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OrdenCompra.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

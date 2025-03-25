@@ -1,0 +1,10 @@
+@model Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature
+
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Ha ocurrido un error</h1>
+<p>Ruta: @Model.Path</p>
+<p>Mensaje: @Model.Error.Message</p>
+<a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Volver al inicio</a>

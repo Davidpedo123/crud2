@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<h1 class="mb-4">Bienvenido al Sistema de Órdenes de Compra</h1>
+
+<div class="row">
+    <div class="col-md-6 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Gestión de Órdenes</h5>
+                <p class="card-text">Crear, aprobar y dar seguimiento a tus órdenes de compra.</p>
+                <a asp-controller="OrdenCompra" asp-action="Index" class="btn btn-primary">Ir a Órdenes</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Gestión de Proveedores</h5>
+                <p class="card-text">Agregar, editar y eliminar proveedores.</p>
+                <a asp-controller="Proveedor" asp-action="Index" class="btn btn-primary">Ir a Proveedores</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+@model crud2.OrdenCompra.Domain.Entidades.OrdenCompra
+
+@{
+    ViewData["Title"] = "Eliminar Orden";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="OrdenCompraId" />
+    <p>¿Seguro eliminar esta orden?</p>
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
