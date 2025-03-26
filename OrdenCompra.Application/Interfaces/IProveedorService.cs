@@ -1,13 +1,14 @@
-using crud2.OrdenCompra.Domain.Entidades;
+using crud2.OrdenCompra.Application.DTOs;
 
+// OrdenCompra.Application/Interfaces/IProveedorService.cs
 namespace crud2.OrdenCompra.Application.Interfaces
 {
     public interface IProveedorService
     {
-        Task<IEnumerable<Proveedor>> GetAllAsync();
-        Task<Proveedor?> GetProveedorAsync(int id);
-        Task CreateProveedorAsync(Proveedor proveedor);
-        Task UpdateProveedorAsync(Proveedor proveedor);
-        Task DeleteProveedorAsync(int id);
+        Task<IEnumerable<ProveedorDto>> GetAllAsync();
+        Task<ProveedorDto> GetByIdAsync(int id);
+        Task CreateAsync(ProveedorDto dto);
+        Task UpdateAsync(ProveedorDto dto);
+        Task DeleteAsync(int id);
     }
 }

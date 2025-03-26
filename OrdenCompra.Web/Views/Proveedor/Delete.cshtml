@@ -1,0 +1,17 @@
+@model crud2.OrdenCompra.Application.DTOs.ProveedorDto
+
+@{
+    ViewData["Title"] = "Eliminar Proveedor";
+}
+
+<h3>¿Está seguro que desea eliminar este proveedor?</h3>
+<div>
+    <h4>@Model.Nombre</h4>
+    <hr />
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ProveedorId" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

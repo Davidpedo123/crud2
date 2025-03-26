@@ -1,0 +1,56 @@
+@model crud2.OrdenCompra.Application.DTOs.OrdenCompraDto
+
+@{
+    ViewData["Title"] = "Detalles de Orden";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    <hr />
+    
+    <dl class="row">
+        <dt class="col-sm-3">ID:</dt>
+        <dd class="col-sm-9">@Model.Id</dd>
+        
+        <dt class="col-sm-3">Proveedor:</dt>
+        <dd class="col-sm-9">@Model.ProveedorNombre</dd>
+        
+        <dt class="col-sm-3">Monto Total:</dt>
+        <dd class="col-sm-9">@Model.MontoTotal.ToString("C")</dd>
+        
+        <dt class="col-sm-3">Estado:</dt>
+        <dd class="col-sm-9">
+            <span class="badge @GetEstadoBadgeClass(Model.Estado)">
+                @Model.Estado
+            </span>
+        </dd>
+        
+        <dt class="col-sm-3">Fecha Creación:</dt>
+        <dd class="col-sm-9">@Model.FechaCreacion.ToString("g")</dd>
+        
+        <dt class="col-sm-3">Comentarios:</dt>
+        <dd class="col-sm-9">@Model.Comentarios</dd>
+    </dl>
+    
+    <div class="mt-4">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+            <i class="bi bi-pencil"></i> Editar
+        </a>
+        <a asp-action="Index" class="btn btn-outline-secondary ms-2">
+            <i class="bi bi-arrow-left"></i> Volver al listado
+        </a>
+    </div>
+</div>
+
+@functions {
+    string GetEstadoBadgeClass(string estado)
+    {
+        return estado switch
+        {
+            "Creada" => "bg-secondary",
+            "Aprobada" => "bg-success",
+            "Cancelada" => "bg-danger",
+            _ => "bg-primary"
+        };
+    }
+}

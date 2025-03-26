@@ -27,6 +27,14 @@ namespace crud2.OrdenCompra.Domain.Entidades
             Comentarios = comentarios;
             FechaCreacion = DateTime.UtcNow;
         }
+        // En Domain/Entidades/OrdenCompra.cs
+        public void ActualizarInformacion(int proveedorId, decimal montoTotal, string estado, string comentarios)
+        {
+            ProveedorId = proveedorId;
+            MontoTotal = montoTotal;
+            Estado = estado;
+            Comentarios = comentarios;
+        }
 
         
         public void Aprobar()

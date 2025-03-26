@@ -1,13 +1,13 @@
-using crud2.OrdenCompra.Domain.Entidades;
 
-namespace crud2.OrdenCompra.Application.Interfaces;
-
-public interface IServicioOrdenCompra
+using crud2.OrdenCompra.Application.DTOs; 
+namespace crud2.OrdenCompra.Application.Interfaces
 {
-    Task<IEnumerable<OrdenCompra.Domain.Entidades.OrdenCompra>> GetAllAsync();
-    Task<OrdenCompra.Domain.Entidades.OrdenCompra?> GetByIdAsync(int id);
-    Task CreateAsync(OrdenCompra.Domain.Entidades.OrdenCompra orden); 
-    Task ApproveAsync(int id);
-    Task CancelAsync(int id);
+    public interface IServicioOrdenCompra
+    {
+        Task<IEnumerable<OrdenCompraDto>> GetAllAsync();
+        Task<OrdenCompraDto> GetByIdAsync(int id);
+        Task CreateAsync(OrdenCompraDto dto);
+        Task UpdateAsync(OrdenCompraDto dto);
+        Task DeleteAsync(int id);
+    }
 }
-

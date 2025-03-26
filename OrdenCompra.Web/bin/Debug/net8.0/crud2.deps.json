@@ -666,7 +666,8 @@
       },
       "OrdenCompra.Application/1.0.0": {
         "dependencies": {
-          "OrdenCompra.Domain": "1.0.0"
+          "OrdenCompra.Domain": "1.0.0",
+          "OrdenCompra.Infraestructure": "1.0.0"
         },
         "runtime": {
           "OrdenCompra.Application.dll": {
@@ -686,7 +687,6 @@
       "OrdenCompra.Infraestructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.1",
-          "OrdenCompra.Application": "1.0.0",
           "OrdenCompra.Domain": "1.0.0"
         },
         "runtime": {

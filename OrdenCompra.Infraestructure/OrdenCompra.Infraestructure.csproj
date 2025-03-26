@@ -11,6 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OrdenCompra.Domain\OrdenCompra.Domain.csproj" />
-    <ProjectReference Include="..\OrdenCompra.Application\OrdenCompra.Application.csproj" />
+
   </ItemGroup>
 </Project>

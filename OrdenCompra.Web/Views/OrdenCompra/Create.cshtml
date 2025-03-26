@@ -1,0 +1,51 @@
+@model crud2.OrdenCompra.Application.DTOs.OrdenCompraDto
+
+@{
+    ViewData["Title"] = "Crear Orden";
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    <hr />
+    
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <div class="mb-3">
+                    <label asp-for="ProveedorId" class="form-label">Proveedor</label>
+                    <select asp-for="ProveedorId" asp-items="@(ViewBag.Proveedores as SelectList)" class="form-select">
+                        <option value="">Seleccione un proveedor</option>
+                    </select>
+                    <span asp-validation-for="ProveedorId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="MontoTotal" class="form-label">Monto Total</label>
+                    <input asp-for="MontoTotal" class="form-control" type="number" step="0.01" />
+                    <span asp-validation-for="MontoTotal" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="Comentarios" class="form-label">Comentarios</label>
+                    <textarea asp-for="Comentarios" class="form-control" rows="3"></textarea>
+                    <span asp-validation-for="Comentarios" class="text-danger"></span>
+                </div>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a asp-action="Index" class="btn btn-outline-secondary me-md-2">
+                        <i class="bi bi-arrow-left"></i> Volver
+                    </a>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save"></i> Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

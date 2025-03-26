@@ -1,16 +1,13 @@
+// OrdenCompra.Web/Controllers/HomeController.cs
 using Microsoft.AspNetCore.Mvc;
 
-namespace crud2.OrdenCompra.Web.Controlador;
-
-public class HomeController : Controller
+namespace crud2.OrdenCompra.Web.Controllers
 {
-    public IActionResult Index()
+    public class HomeController : Controller
     {
-        return View();
-    }
-
-    public IActionResult Error()
-    {
-        return View();
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }

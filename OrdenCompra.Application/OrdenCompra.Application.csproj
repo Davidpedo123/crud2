@@ -7,5 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OrdenCompra.Domain\OrdenCompra.Domain.csproj" />
+    <ProjectReference Include="..\OrdenCompra.Infraestructure\OrdenCompra.Infraestructure.csproj" /> 
+    
   </ItemGroup>
 </Project>

@@ -30,3 +30,5 @@ C:\Users\etejada\source\repos\crud2\OrdenCompra.Application\obj\Debug\net8.0\Ord
 C:\Users\etejada\source\repos\crud2\OrdenCompra.Application\obj\Debug\net8.0\refint\OrdenCompra.Application.dll
 C:\Users\etejada\source\repos\crud2\OrdenCompra.Application\obj\Debug\net8.0\OrdenCompra.Application.pdb
 C:\Users\etejada\source\repos\crud2\OrdenCompra.Application\obj\Debug\net8.0\ref\OrdenCompra.Application.dll
+C:\Users\david\source\repos\crud2\OrdenCompra.Application\bin\Debug\net8.0\OrdenCompra.Infraestructure.dll
+C:\Users\david\source\repos\crud2\OrdenCompra.Application\bin\Debug\net8.0\OrdenCompra.Infraestructure.pdb
