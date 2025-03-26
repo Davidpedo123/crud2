@@ -14,12 +14,13 @@
                 <input type="hidden" asp-for="Id" />
                 
                 <div class="mb-3">
-                    <label asp-for="ProveedorId" class="form-label">Proveedor</label>
-                    <select asp-for="ProveedorId" class="form-select" 
-                            asp-items="@(new SelectList(ViewBag.Proveedores, "Id", "Nombre"))">
-                    </select>
-                    <span asp-validation-for="ProveedorId" class="text-danger"></span>
-                </div>
+                <label asp-for="ProveedorId" class="form-label">Proveedor</label>
+                <select asp-for="ProveedorId" class="form-select" 
+                        asp-items="ViewBag.Proveedores"> 
+                    <option value="">-- Seleccione un Proveedor --</option>
+                </select>
+                <span asp-validation-for="ProveedorId" class="text-danger"></span>
+            </div>
                 
                 <div class="mb-3">
                     <label asp-for="MontoTotal" class="form-label">Monto Total</label>
