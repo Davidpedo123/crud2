@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "L7A0Ma1FBTphofsOJdcy6yZy932Lzri8juFA36b8j3c=",
+  "Hash": "YxiiNYJZgcSiV55n+RvMteFPb2+oEUjRgc/Gqudd9jw=",
   "Source": "crud2",
   "BasePath": "_content/crud2",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\david\\source\\repos\\crud2\\OrdenCompra.Api\\OrdenCompra.Api.csproj",
+      "Version": 2,
+      "Source": "OrdenCompra.Api",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "crud2\\wwwroot",

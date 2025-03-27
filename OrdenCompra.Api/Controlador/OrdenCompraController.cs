@@ -1,43 +1,94 @@
-[ApiController]
-[Route("api/[controller]")]
+using crud2.OrdenCompra.Application.DTOs;
+using crud2.OrdenCompra.Application.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
-namespace crud2.OrdenCompra.Api.Controllers : ControllerBase
+namespace crud2.OrdenCompra.Api.Controllers
 {
-    private readonly IOrdenCompraService _service;
-
-    public OrdenCompraController(IOrdenCompraService service)
-        => _service = service;
-
-    [HttpGet]
-    public async Task<IActionResult> GetAll()
-        => Ok(await _service.GetAllAsync());
-
-    [HttpGet("{id}")]
-    public async Task<IActionResult> Get(int id)
+    [ApiController]
+    [Route("api/ordenes-compra")]
+    [Produces("application/json")]
+    public class OrdenCompraControllerAPI : ControllerBase
     {
-        var orden = await _service.GetByIdAsync(id);
-        return orden is null ? NotFound() : Ok(orden);
-    }
+        private readonly IServicioOrdenCompra _service;
 
-    [HttpPost]
-    public async Task<IActionResult> Create([FromBody] OrdenCompraDto dto)
-    {
-        var orden = new OrdenCompra(dto.ProveedorId, dto.MontoTotal, "Creada", dto.Comentarios);
-        await _service.CreateAsync(orden);
-        return CreatedAtAction(nameof(Get), new { id = orden.OrdenCompraId }, orden);
-    }
+        public OrdenCompraControllerAPI(IServicioOrdenCompra service)
+        {
+            _service = service;
+        }
 
-    [HttpPut("{id}/approve")]
-    public async Task<IActionResult> Approve(int id)
-    {
-        await _service.ApproveAsync(id);
-        return NoContent();
-    }
+        
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<OrdenCompraDto>>> GetAll()
+        {
+            var ordenes = await _service.GetAllAsync();
+            return Ok(ordenes);
+        }
 
-    [HttpPut("{id}/cancel")]
-    public async Task<IActionResult> Cancel(int id)
-    {
-        await _service.CancelAsync(id);
-        return NoContent();
+        
+        [HttpGet("{id}")]
+        public async Task<ActionResult<OrdenCompraDto>> GetById(int id)
+        {
+            var orden = await _service.GetByIdAsync(id);
+            return orden is null ? NotFound() : Ok(orden);
+        }
+
+        
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] OrdenCompraDto dto)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            await _service.CreateAsync(dto);
+            return CreatedAtAction(nameof(GetById), new { id = dto.Id }, dto);
+        }
+
+        
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] OrdenCompraDto dto)
+        {
+            if (id != dto.Id)
+                return BadRequest("ID mismatch");
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            await _service.UpdateAsync(dto);
+            return NoContent();
+        }
+
+        
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            await _service.DeleteAsync(id);
+            return NoContent();
+        }
+
+        
+        [HttpPut("{id}/aprobar")]
+        public async Task<IActionResult> AprobarOrden(int id)
+        {
+            var orden = await _service.GetByIdAsync(id);
+            if (orden is null)
+                return NotFound();
+
+            orden.Estado = "Aprobada";
+            await _service.UpdateAsync(orden);
+            return NoContent();
+        }
+
+        
+        [HttpPut("{id}/cancelar")]
+        public async Task<IActionResult> CancelarOrden(int id)
+        {
+            var orden = await _service.GetByIdAsync(id);
+            if (orden is null)
+                return NotFound();
+
+            orden.Estado = "Cancelada";
+            await _service.UpdateAsync(orden);
+            return NoContent();
+        }
     }
 }

@@ -9,7 +9,7 @@
     <ProjectReference Include="..\OrdenCompra.Domain\OrdenCompra.Domain.csproj" />
     <ProjectReference Include="..\OrdenCompra.Application\OrdenCompra.Application.csproj" />
     <ProjectReference Include="..\OrdenCompra.Infraestructure\OrdenCompra.Infraestructure.csproj" />
-
+    <ProjectReference Include="..\OrdenCompra.Api\OrdenCompra.Api.csproj" />
   </ItemGroup>
 
   <ItemGroup>

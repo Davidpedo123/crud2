@@ -165,12 +165,14 @@ C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\runtimes\win\
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\OrdenCompra.Api.dll
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\OrdenCompra.Application.dll
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\OrdenCompra.Domain.dll
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\OrdenCompra.Infraestructure.dll
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\OrdenCompra.Domain.pdb
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\OrdenCompra.Application.pdb
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\OrdenCompra.Infraestructure.pdb
+C:\Users\david\source\repos\crud2\OrdenCompra.Web\bin\Debug\net8.0\OrdenCompra.Api.pdb
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.csproj.AssemblyReference.cache
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\david\source\repos\crud2\OrdenCompra.Web\obj\Debug\net8.0\crud2.AssemblyInfoInputs.cache
